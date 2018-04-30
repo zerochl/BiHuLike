@@ -97,11 +97,11 @@
   "limitLikeCount" : 150,
   "loginRefreshTime" : 12,
   "phone" : "18051156285",
-  "password" : "076742567778be885ad66804ec9facb21a4296aa41ac29c4f7d5afe7a206c699",
+  "password" : "自己抓包获取",
   "userList" : [
     {
       "phone" : "18051180915",
-      "password" : "4acf419688ba29d7aa84e3b77c9f61130e582b6ab6b4208a5b691aef34cb9d14"
+      "password" : "自己抓包获取"
     }
   ]
 }

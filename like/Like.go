@@ -1,12 +1,12 @@
 package Like
 
 import (
-	"bihu/follow"
-	"bihu/network"
-	"bihu/api"
+	"BiHu/follow"
 	"net/url"
-	"bihu/user"
 	"strconv"
+	"BiHu/user"
+	"BiHu/api"
+	"BiHu/network"
 )
 
 func DoLike(artEntityList []Follow.ArtEntity,loginEntity User.LoginEntity)  {

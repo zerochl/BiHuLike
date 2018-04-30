@@ -1,21 +1,19 @@
 package Follow
 
 import (
-	"bihu/network"
-	"bihu/api"
+	"BiHu/network"
 	"net/url"
-	"log"
-	"bihu/user"
 	"encoding/json"
-	"bihu/config"
+	"BiHu/user"
+	"BiHu/api"
+	"BiHu/config"
 )
 
 func GetFollowList(loginEntity User.LoginEntity) []ArtEntity {
 	followListByte := network.HttpPostForm(Api.API_GET_FOLLOW_ARTICAL, url.Values{"userId": {loginEntity.UserId}, "accessToken": {loginEntity.AccessToken}})
-	log.Print("followList:",string(followListByte))
+	//log.Print("followList:",string(followListByte))
 	followEntity := &FollowEntity{}
 	json.Unmarshal(followListByte, followEntity)
-	log.Print("")
 	return followEntity.Data.ArtList.ArtEntityList
 }
 

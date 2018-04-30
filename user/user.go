@@ -1,9 +1,9 @@
 package User
 
 import (
-	"bihu/network"
+	"BiHu/network"
 	"net/url"
-	"bihu/api"
+	"BiHu/api"
 	"encoding/json"
 	"log"
 )

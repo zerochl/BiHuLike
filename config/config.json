@@ -1,0 +1,107 @@
+{
+  "followNameList" : [
+    {
+      "name" : "南宫远",
+      "limitLikeCount" : 200
+    },{
+      "name" : "圊呓语",
+      "limitLikeCount" : 200
+    },{
+      "name" : "区块链生存指南",
+      "limitLikeCount" : 200
+    },{
+      "name" : "数字货币趋势狂人",
+      "limitLikeCount" : 200
+    },{
+      "name" : "区块佣兵",
+      "limitLikeCount" : 200
+    },{
+      "name" : "湘乡的大树",
+      "limitLikeCount" : 200
+    },{
+      "name" : "吴庆英",
+      "limitLikeCount" : 200
+    },{
+      "name" : "JIMI",
+      "limitLikeCount" : 200
+    },{
+      "name" : "wdctll",
+      "limitLikeCount" : 200
+    },{
+      "name" : "区块链研究院",
+      "limitLikeCount" : 200
+    },{
+      "name" : "玩火的猴子",
+      "limitLikeCount" : 200
+    },{
+      "name" : "孤独的异客",
+      "limitLikeCount" : 200
+    },{
+      "name" : "币圈少年",
+      "limitLikeCount" : 200
+    },{
+      "name" : "EOSCannon",
+      "limitLikeCount" : 200
+    },{
+      "name" : "Bean",
+      "limitLikeCount" : 200
+    },{
+      "name" : "柚子",
+      "limitLikeCount" : 200
+    },{
+      "name" : "1212秋刀鱼",
+      "limitLikeCount" : 200
+    },{
+      "name" : "珞珈山神",
+      "limitLikeCount" : 200
+    },{
+      "name" : "鱼夫子说",
+      "limitLikeCount" : 200
+    },{
+      "name" : "郭立芳37258",
+      "limitLikeCount" : 200
+    },{
+      "name" : "庖丁解币",
+      "limitLikeCount" : 200
+    },{
+      "name" : "钱串串",
+      "limitLikeCount" : 200
+    }
+  ],
+  "needRefreshInterval" : false,
+  "refreshInterval" : 20,
+  "fastRefreshInterval" : 2,
+  "fastRefreshCount" : 40,
+  "fixedRefreshTimeList" : [
+    "08:00",
+    "05:55",
+    "06:30",
+    "06:46",
+    "06:59",
+    "07:07",
+    "07:21",
+    "08:08",
+    "09:09",
+    "10:00",
+    "10:10",
+    "11:21",
+    "16:16",
+    "20:00",
+    "20:05",
+    "20:35",
+    "21:35",
+    "21:45",
+    "21:50",
+    "22:00"
+  ],
+  "limitLikeCount" : 150,
+  "loginRefreshTime" : 12,
+  "phone" : "18051156285",
+  "password" : "076742567778be885ad66804ec9facb21a4296aa41ac29c4f7d5afe7a206c699",
+  "userList" : [
+    {
+      "phone" : "18051180915",
+      "password" : "4acf419688ba29d7aa84e3b77c9f61130e582b6ab6b4208a5b691aef34cb9d14"
+    }
+  ]
+}

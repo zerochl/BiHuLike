@@ -10,8 +10,12 @@ import (
 )
 
 func GetFollowList(loginEntity User.LoginEntity) []ArtEntity {
-	followListByte := network.HttpPostForm(Api.API_GET_FOLLOW_ARTICAL, url.Values{"userId": {loginEntity.UserId}, "accessToken": {loginEntity.AccessToken}})
+	//log.Print("userId:",loginEntity.UserId,";token:",loginEntity.AccessToken)
+	followListByte , err:= network.HttpPostForm(Api.API_GET_FOLLOW_ARTICAL, url.Values{"userId": {loginEntity.UserId}, "accessToken": {loginEntity.AccessToken}})
 	//log.Print("followList:",string(followListByte))
+	if err != nil {
+		return nil
+	}
 	followEntity := &FollowEntity{}
 	json.Unmarshal(followListByte, followEntity)
 	return followEntity.Data.ArtList.ArtEntityList
@@ -19,6 +23,11 @@ func GetFollowList(loginEntity User.LoginEntity) []ArtEntity {
 
 func GetStarFollowList(loginEntity User.LoginEntity, configEntity *config.Config) []ArtEntity {
 	artEntityList := GetFollowList(loginEntity)
+	if (artEntityList == nil) {
+		return nil
+	}
+	//log.Print("userId:",loginEntity.UserId,";token:",loginEntity.AccessToken)
+	//log.Print("artEntityList:" , len(artEntityList))
 	starArtList := make([]ArtEntity,0)
 	for _,followEntity := range configEntity.FollowNameList {
 		for _,artEntity := range artEntityList {

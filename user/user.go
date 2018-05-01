@@ -8,7 +8,7 @@ import (
 	"log"
 )
 //var loginEntity = &RootEntity{};
-var loginEntityMap = make(map[string] RootEntity)
+var loginEntityMap = make(map[string] *RootEntity)
 
 func GetLoginEntity(userName,password string) LoginEntity {
 	//if (loginEntity.Data.AccessToken != "") {
@@ -23,15 +23,21 @@ func GetLoginEntity(userName,password string) LoginEntity {
 		return loginEntityMap[userName].Data
 	}
 	log.Print("开始重新获取token")
-	loginResult := network.HttpPostForm(Api.API_LOGIN, url.Values{"phone": {userName}, "password": {password}})
-	loginEntity := RootEntity{}
+	loginResult, err := network.HttpPostForm(Api.API_LOGIN, url.Values{"phone": {userName}, "password": {password}})
+	if (err != nil) {
+		log.Print("获取token失败，开始循环获取")
+		return GetLoginEntity(userName,password)
+	}
+	//log.Print("token:",string(loginResult))
+	loginEntity := &RootEntity{}
 	json.Unmarshal(loginResult, loginEntity)
 	loginEntityMap[userName] = loginEntity
+	//log.Print("token:",loginEntity.Data.AccessToken)
 	return loginEntity.Data
 }
 
 func ClearLoginInfo()  {
-	loginEntityMap = make(map[string] RootEntity)
+	loginEntityMap = make(map[string] *RootEntity)
 }
 
 type RootEntity struct {

@@ -41,11 +41,13 @@ func GetTextByUrl(url string) string {
 	return string(textByte)
 }
 
-func HttpPostForm(urlStr string,data url.Values) []byte {
+func HttpPostForm(urlStr string,data url.Values) ([]byte ,error) {
 	resp, err := http.PostForm(urlStr, data)
 
 	if err != nil {
 		// handle error
+		log.Print("request error:" , err.Error())
+		return nil,err
 	}
 
 	defer resp.Body.Close()
@@ -55,7 +57,7 @@ func HttpPostForm(urlStr string,data url.Values) []byte {
 	}
 
 	//fmt.Println(string(body))
-	return body
+	return body,nil
 }
 
 //func GetTextByJson(jsonStr string) string {

@@ -44,7 +44,7 @@ func doTimingTask(configEntity *config.Config)  {
 			//}
 			if (customTime == time.Now().Format("15:04")) {
 				log.Print("符合条件，开始fast refresh")
-				go fastRequest(configEntity)
+				fastRequest(configEntity)
 			}
 		}
 	}
@@ -62,6 +62,7 @@ func doClearToken(configEntity *config.Config)  {
 func doTask(configEntity *config.Config)  {
 	//network.HttpPostForm(API_LOGIN, url.Values{"phone": {"18051156285"}, "password": {"076742567778be885ad66804ec9facb21a4296aa41ac29c4f7d5afe7a206c699"}})
 	loginEntity := User.GetLoginEntity(configEntity.Phone, configEntity.Password)
+	//log.Print("userId:",loginEntity.UserId,";token:",loginEntity.AccessToken)
 	//log.Print(loginEntity.AccessToken,";userId:",loginEntity.UserId)
 	followArtList := Follow.GetStarFollowList(loginEntity,configEntity)
 	log.Print("size:" , len(followArtList))

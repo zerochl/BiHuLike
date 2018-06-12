@@ -66,8 +66,11 @@ func doTask(configEntity *config.Config)  {
 	//log.Print(loginEntity.AccessToken,";userId:",loginEntity.UserId)
 	followArtList := Follow.GetStarFollowList(loginEntity,configEntity)
 	log.Print("size:" , len(followArtList))
+	if (followArtList == nil || len(followArtList) == 0) {
+		return;
+	}
 	Like.DoLike(followArtList, loginEntity)
-	if (configEntity.UserList == nil || len(configEntity.UserList) == 0 || followArtList == nil || len(followArtList) == 0) {
+	if (configEntity.UserList == nil || len(configEntity.UserList) == 0) {
 		return
 	}
 	for _,userInfo := range configEntity.UserList {

@@ -7,6 +7,7 @@ import (
 	"strings"
 	//"fmt"
 	"net/url"
+	//"fmt"
 )
 
 
@@ -37,7 +38,7 @@ func GetTextByUrl(url string) string {
 
 	var textByte []byte
 	textByte, _ = ioutil.ReadAll(resp.Body)
-	log.Println("result:", string(textByte[:]))
+	//log.Println("result:", string(textByte[:]))
 	return string(textByte)
 }
 

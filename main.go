@@ -87,6 +87,8 @@ func fastRequest(configEntity *config.Config)  {
 		doTask(configEntity);
 		time.Sleep(time.Second * time.Duration(configEntity.FastRefreshInterval))
 	}
+	//防止5分钟内不停刷新
+	time.Sleep(time.Second * time.Duration(60 * 2 - configEntity.FastRefreshCount * configEntity.FastRefreshInterval))
 }
 
 

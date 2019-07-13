@@ -7,9 +7,12 @@ import (
 	"BiHu/user"
 	"BiHu/follow"
 	"BiHu/like"
+	"net"
+	"fmt"
 )
 
 func main()  {
+
 	//读取配置
 	configEntity := config.GetConfig()
 	log.Print("config:",configEntity.RefreshInterval)
@@ -22,6 +25,29 @@ func main()  {
 	go doClearToken(configEntity)
 	end := <- ch
 	log.Print("end:",end)
+	//SendMsg("{'userId':'117993','accessToken':'2057f2d8b3834df5b3e77e4c48f2778c','pageNum':'1','pageSize':'20','nonce':'aeadaead-eb2f-4fd7-b624-cd54562b9f57'}");
+}
+
+func SendMsg(msg string) {
+	//	conn, err := net.DialTimeout("tcp", "127.0.0.1:1090", 1000*1000*1000*30)
+	log.Println("start")
+	conn, err := net.Dial("tcp", "127.0.0.1:8088")
+	if err != nil {
+		fmt.Printf("create client err:%s\n", err)
+		return
+	}
+	log.Println("start2")
+	defer conn.Close()
+	senddata := []byte(msg)
+	_, err = conn.Write(senddata)
+	if err != nil {
+		log.Println("send msg err:", err)
+	}
+	time.Sleep(1 * time.Second)
+	log.Println("before read")
+	buf := make([]byte, 10240)
+	length, _ := conn.Read(buf)
+	log.Println("result,length:", length , ";result:", buf[:length])
 }
 
 func doIntervalTask(configEntity *config.Config)  {

@@ -11,7 +11,14 @@ import (
 
 func GetFollowList(loginEntity User.LoginEntity) []ArtEntity {
 	//log.Print("userId:",loginEntity.UserId,";token:",loginEntity.AccessToken)
-	followListByte , err:= network.HttpPostForm(Api.API_GET_FOLLOW_ARTICAL, url.Values{"userId": {loginEntity.UserId}, "accessToken": {loginEntity.AccessToken}})
+	nonce := network.GetNonce()
+	//paramStr := "{'userId':'" +loginEntity.UserId+ "','accessToken':'"+loginEntity.AccessToken+"','pageSize':'20','pageNum':'1','nonce':'"+nonce+"'}"
+	followListByte , err:= network.HttpPostForm(Api.API_GET_FOLLOW_ARTICAL,
+		url.Values{"userId": {loginEntity.UserId},
+			"accessToken": {loginEntity.AccessToken},
+			"pageSize":{"20"},
+			"pageNum":{"1"},
+			"nonce":{nonce}})
 	//log.Print("followList:",string(followListByte))
 	if err != nil {
 		return nil

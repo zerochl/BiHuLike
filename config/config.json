@@ -1,136 +1,193 @@
 {
   "followNameList" : [
     {
-      "name" : "南宫远",
-      "limitLikeCount" : 200
-    },{
-      "name" : "圊呓语",
-      "limitLikeCount" : 200
-    },{
-      "name" : "区块链生存指南",
-      "limitLikeCount" : 200
-    },{
-      "name" : "数字货币趋势狂人",
-      "limitLikeCount" : 200
-    },{
       "name" : "区块佣兵",
-      "limitLikeCount" : 200
-    },{
-      "name" : "湘乡的大树",
-      "limitLikeCount" : 200
-    },{
-      "name" : "吴庆英",
-      "limitLikeCount" : 200
-    },{
-      "name" : "JIMI",
-      "limitLikeCount" : 200
-    },{
-      "name" : "wdctll",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "22:00"
     },{
       "name" : "区块链研究员",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "08:30"
     },{
       "name" : "玩火的猴子",
-      "limitLikeCount" : 200
-    },{
-      "name" : "孤独的异客",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "07:21"
     },{
       "name" : "币圈少年",
-      "limitLikeCount" : 200
-    },{
-      "name" : "EOSCannon",
-      "limitLikeCount" : 200
-    },{
-      "name" : "Bean",
-      "limitLikeCount" : 200
-    },{
-      "name" : "柚子",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "14:30"
     },{
       "name" : "1212秋刀鱼",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "20:00"
     },{
       "name" : "珞珈山神",
-      "limitLikeCount" : 200
-    },{
-      "name" : "鱼夫子说",
-      "limitLikeCount" : 200
-    },{
-      "name" : "郭立芳37258",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "20:05"
     },{
       "name" : "庖丁解币",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "20:45"
     },{
-      "name" : "钱串串",
-      "limitLikeCount" : 200
-    },{
-      "name" : "胖哥",
-      "limitLikeCount" : 200
-    },{
-      "name" : "绍泉",
-      "limitLikeCount" : 200
-    },{
-      "name" : "财神大胜哥",
-      "limitLikeCount" : 200
-    },{
-      "name" : "天空之镜",
-      "limitLikeCount" : 200
-    },{
-      "name" : "黄世辉",
-      "limitLikeCount" : 200
-    },{
-      "name" : "oleole九日笔记",
-      "limitLikeCount" : 200
-    },{
-      "name" : "大毛向前冲",
-      "limitLikeCount" : 200
+      "name" : "财神大圣哥",
+      "limitLikeCount" : 5,
+      "time" : "23:30"
     },{
       "name" : "浅谈区块链",
-      "limitLikeCount" : 200
+      "limitLikeCount" : 5,
+      "time" : "13:00"
+    },{
+      "name" : "数资本",
+      "limitLikeCount" : 5,
+      "time" : "12:34"
+    },{
+      "name" : "爱莉莎",
+      "limitLikeCount" : 5,
+      "time" : "22:24"
+    },{
+      "name" : "风华雁飞",
+      "limitLikeCount" : 5,
+      "time" : "21:11"
+    },{
+      "name" : "区块链顽主",
+      "limitLikeCount" : 5,
+      "time" : "18:00"
+    },{
+      "name" : "听风说币",
+      "limitLikeCount" : 5,
+      "time" : "16:23"
+    },{
+      "name" : "幸运小鸟",
+      "limitLikeCount" : 5,
+      "time" : "06:36"
+    },{
+      "name" : "无忌区块链",
+      "limitLikeCount" : 5,
+      "time" : "23:00"
+    },{
+      "name" : "币有所得",
+      "limitLikeCount" : 2,
+      "time" : "19:19"
+    },{
+      "name" : "林星辰",
+      "limitLikeCount" : 5,
+      "time" : "11:40"
+    },{
+      "name" : "币圈键盘姐",
+      "limitLikeCount" : 5,
+      "time" : "11:00"
+    },{
+      "name" : "雷恩",
+      "limitLikeCount" : 5,
+      "time" : "17:00"
+    },{
+      "name" : "EKT周讯",
+      "limitLikeCount" : 5,
+      "time" : "15:30"
+    },{
+      "name" : "你只是懒而已",
+      "limitLikeCount" : 5,
+      "time" : "23:11"
+    },{
+      "name" : "股海无涯苦作舟",
+      "limitLikeCount" : 5,
+      "time" : "19:00"
+    },{
+      "name" : "区块链技术专员",
+      "limitLikeCount" : 5,
+      "time" : "17:55"
+    },{
+      "name" : "榆钱",
+      "limitLikeCount" : 5,
+      "time" : "10:58"
+    },{
+      "name" : "陈天宇",
+      "limitLikeCount" : 5,
+      "time" : "10:10"
+    },{
+      "name" : "兔子酱",
+      "limitLikeCount" : 5,
+      "time" : "10:30"
+    },{
+      "name" : "公众号冰封千年",
+      "limitLikeCount" : 5,
+      "time" : "12:22"
+    },{
+      "name" : "西山近",
+      "limitLikeCount" : 5,
+      "time" : "13：30"
+    },{
+      "name" : "区块链成哥",
+      "limitLikeCount" : 5,
+      "time" : "14：00"
+    },{
+      "name" : "崛起币",
+      "limitLikeCount" : 5,
+      "time" : "15：15"
+    },{
+      "name" : "认真思考的阿木",
+      "limitLikeCount" : 5,
+      "time" : "16:45"
+    },{
+      "name" : "Boa波雅",
+      "limitLikeCount" : 5,
+      "time" : "20:35"
+    },{
+      "name" : "拾荒的蜘蛛侠",
+      "limitLikeCount" : 5,
+      "time" : "20:50"
     }
   ],
-  "needRefreshInterval" : true,
+  "needRefreshInterval" : false,
   "refreshInterval" : 10,
   "fastRefreshInterval" : 1,
-  "fastRefreshCount" : 120,
+  "fastRefreshCount" : 60,
   "fixedRefreshTimeList" : [
-    "05:55",
-    "06:20",
-    "06:30",
-    "06:46",
-    "06:59",
-    "07:07",
+    "06:36",
     "07:21",
-    "07:30",
-    "08:08",
-    "09:09",
-    "10:00",
+    "08:30",
     "10:10",
-    "11:30",
+    "10:30",
+    "10:58",
+    "11:00",
+    "11:40",
+    "12:22",
+    "12:34",
     "13:00",
-    "13:18",
-    "14:59",
-    "15:00",
-    "16:16",
+    "13:30",
+    "14:00",
+    "14:30",
+    "15:15",
+    "15:30",
+    "16:23",
+    "16:45",
+    "17:00",
+    "17:55",
+    "18:00",
+    "19:00",
+    "19:19",
+    "20:00",
     "20:05",
+    "20:35",
     "20:45",
-    "21:09",
-    "21:21",
-    "21:35",
+    "20:50",
+    "21:11",
     "22:00",
-    "23:11"
+    "22:24",
+    "23:00",
+    "23:11",
+    "23:30"
   ],
-  "limitLikeCount" : 150,
+  "limitLikeCount" : 50,
   "loginRefreshTime" : 12,
-  "phone" : "18051158888",
-  "password" : "自行获取密码",
+  "phone" : "18051156285",
+  "password" : "4acf419688ba29d7aa84e3b77c9f61130e582b6ab6b4208a5b691aef34cb9d14",
+  "userId" : "59328",
   "userList" : [
     {
-      "phone" : "18051188888",
-      "password" : "自行抓包密码"
+      "userId" : "117993",
+      "phone" : "18051180915",
+      "password" : "4acf419688ba29d7aa84e3b77c9f61130e582b6ab6b4208a5b691aef34cb9d14"
     }
   ]
 }
